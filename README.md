@@ -2,20 +2,6 @@
 
 A gesture-based virtual mouse control system using hand detection and computer vision. Control your computer mouse, keyboard shortcuts, and system functions entirely through hand gestures captured via your webcam.
 
----
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [System Requirements](#system-requirements)
-- [Prerequisites & Dependencies](#prerequisites--dependencies)
-- [Libraries](#libraries)
-- [Algorithm](#algorithm)
-- [How the Project Works](How-the-Project-Works)
-- [Code Explanation](#code-explanation)
-- [Gesture Controls](#gesture-controls)
-
----
 
 ## Project Overview
 
