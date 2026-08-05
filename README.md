@@ -240,9 +240,6 @@ For Left Click:     👎 👍  (index down, thumb up)
 For Right Click:    👆 👆  (index & middle both up)
 ```
 
-```
 
-
-
-**Happy gesture controlling!** 
+## Happy gesture controlling!
 
