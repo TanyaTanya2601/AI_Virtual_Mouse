@@ -9,8 +9,9 @@ A gesture-based virtual mouse control system using hand detection and computer v
 - [Project Overview](#project-overview)
 - [System Requirements](#system-requirements)
 - [Prerequisites & Dependencies](#prerequisites--dependencies)
-- [Libraries](#Libraries)
-- [Algorithm](#Algorithm)
+- [Libraries](#libraries)
+- [Algorithm](#algorithm)
+- [How the Project Works](How-the-Project-Works)
 - [Code Explanation](#code-explanation)
 - [Gesture Controls](#gesture-controls)
 
@@ -36,10 +37,6 @@ The system detects hand landmarks (27 points on each hand) and maps finger posit
 | Requirement | Specification |
 |---|---|
 | **Python Version** | 3.8, 3.9, 3.10, 3.11  (3.14+ not compatible due to PyAudio issues) |
-| **OS** | Windows, macOS, Linux |
-| **Webcam** | USB or built-in camera required |
-| **RAM** | Minimum 4GB |
-| **Processor** | Intel i5/AMD Ryzen 5 or better (recommended) |
 
 ---
 
@@ -73,43 +70,52 @@ PyAutoGUI performs keyboard shortcuts and screenshots.
 ```
 ## Algorithm
 
-Algorithm
-Start
+    Start
+    
+    ↓
+    Capture webcam frame
 
+    ↓
+    Convert BGR → RGB
 
-↓
+    ↓
+    Detect hand landmarks
 
-Capture webcam frame
+    ↓
+    Identify finger positions
 
-↓
+    ↓
+    Recognize gesture
 
-Convert BGR → RGB
+    ↓
+    Perform corresponding mouse or keyboard action
 
-↓
+    ↓
+    Repeat until Q is pressed
+  
+    ↓
+    Exit
 
-Detect hand landmarks
+## How the Project Works
 
-↓
+The application continuously captures frames from the webcam.
 
-Identify finger positions
+      Webcam
 
-↓
+      ↓
+      OpenCV
 
-Recognize gesture
+      ↓
+      MediaPipe Hand Detection
 
-↓
+      ↓
+      Hand Landmark Extraction
 
-Perform corresponding mouse or keyboard action
+      ↓
+      Gesture Recognition
 
-↓
-
-Repeat until Q is pressed
-
-↓
-
-Exit
-
-
+      ↓
+      Mouse / Keyboard Action
 
 ##  Code Explanation
 
